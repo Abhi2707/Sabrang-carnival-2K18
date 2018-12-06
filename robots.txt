@@ -1,0 +1,10 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow: /js/
+Disallow: /images/
+Disallow: /css/
+Disallow: /css/later_register.html
+
+http://sabrang.jklu.edu.in/sitemap.xml

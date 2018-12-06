@@ -1,0 +1,2 @@
+[23-Oct-2018 08:48:55 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/qr1wzwzge0y9/public_html/sabrang/xssr-sql-view/login.php on line 39
+[25-Oct-2018 10:50:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/qr1wzwzge0y9/public_html/sabrang/xssr-sql-view/sabrang_team_event_data.php on line 102

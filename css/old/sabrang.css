@@ -1,0 +1,234 @@
+* { 
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+    #particles-js{ 
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+
+.button1{background-color:#a6a6a6;
+ color:white;
+ padding:10px 10px;
+ font-size:24px;
+ text-align:center;
+ cursor:pointer;
+ float:left;
+ border:none; 
+ }
+ 
+ .register_text{
+    position: absolute;
+    top:2%;
+	right:2%;
+	z-index:1;
+    border-style: none;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	padding:10px;
+	background-color:rgb(219, 36, 106);
+	cursor:pointer;
+	color:white;
+	font-size:18px;
+	text-decoration:none;
+	font-family: 'Roboto Mono', monospace;
+	}
+
+.icons_div i:hover {
+    color: red;
+}
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height:100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background:linear-gradient(#F28A30,#F05837); /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+	display:inline-block;
+    position: absolute;
+    top: 15%; /* 25% from the top */
+    left:10%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+    z-index:-1;
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: rgb(219, 36, 106);
+}
+
+/* Position the close button (top left corner) */
+ .overlay .closebtn {
+    position: absolute;
+    left:25px;
+    top:250px;
+    font-size:80px;
+    cursor:pointer;
+}
+.overlay-icons:hover{
+    color:rgb(219, 36, 106);
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-width: 767px) and (orientation:portrait) {
+    .loader{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        width:40%;
+        height:40%;
+        z-index:10;
+    }
+    .overlay a {
+        font-size: 30px;        
+    }
+    .overlay .closebtn {
+        
+        font-size: 60px;
+        top: 0px;
+		left: 0px;
+        border:none;
+        border-radius:0px;
+        padding:0px;
+        
+    }
+    .overlay-content {
+        display:inline-block;
+        position: absolute;
+        top: 15%; /* 25% from the top */
+        left:5%; /* 100% width */
+        text-align: left; /* Centered text/links */
+     /* 30px top margin to avoid conflict with the close button on smaller screens */
+     
+    }
+}  
+@media screen and (max-width: 767px) and (orientation:landscape){
+    .overlay .closebtn {
+        font-size: 60px;
+        top: 0px;
+		left: 0px;
+        border:none;
+        border-radius:0px;
+        padding:0px;
+        
+    }
+    .overlay-content {
+        display:inline-block;
+        position: relative;
+        top: 25%; /* 25% from the top */
+        left:33%; /* 100% width */
+        text-align: left; /* Centered text/links */
+        margin-top: 0px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+    
+}
+
+/* Change the color of links on hover */
+
+.overlay-icons{
+    margin-top:5%;
+    color:white;
+    background-color:transparent;
+    cursor:pointer;
+    border-style:none;
+    font-size:28px;
+    margin-right:-30px;
+   }
+.footer{
+    content:"";
+    margin-top:100px;
+    clear:both;
+}
+
+  .icons:hover{
+      color:rgb(219, 36, 106);
+      
+  }
+   .links{
+       text-decoration: none;
+   }
+   .footer_button:hover{
+       color:rgb(219, 36, 106);
+       
+   }
+   
+#about_photo{
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.4),0 6px 20px 0 rgba(0, 0, 0, 0.4) !important;
+}
+
+/***************LOADER******************/
+.st0{fill:#04a534;stroke:#04a534;stroke-width:2;stroke-miterlimit:10;}
+
+.preloader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-color:black;
+z-index:1000;
+}
+.complete{
+opacity:0;
+display:none;
+}
+.loader{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:20%;
+    height:20%;
+    z-index:10;
+}
+
+/*********** Flickity **************/
+
+
+.carousel-cell {
+    width: 100%; /* full width */
+    height:500px; /* height of carousel */
+  }
+  /*
+  .flickity-button {
+    display: none;
+  }*/
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+  /* fill-in selected dot */
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+  }

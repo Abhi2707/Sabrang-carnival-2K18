@@ -1,0 +1,16 @@
+{
+  "short_name": "Sabrang",
+  "name": "Sabrang 2K18",
+  "icons": [
+    {
+      "src": "http://sabrang.jklu.edu.in/images/newsabranglogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "value": "Sabrang 2K18"
+}
